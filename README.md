@@ -58,7 +58,7 @@ You will get a JSON as a result. Copy the value for `id_token` - this is the one
 
 ### Connecting to the API
 
-The API runs on `wss://app.oven.anovaculinary.io` . You will need to connect to it using a client that supports WebSockets - either postman or an online tool like [this one](https://www.piesocket.com/websocket-tester).
+The API runs on `wss://devices.anovaculinary.io` . You will need to connect to it using a client that supports WebSockets - either postman or an online tool like [this one](https://www.piesocket.com/websocket-tester).
 
 Before connecting, you will need to set the following:
 1. Query parameters:
