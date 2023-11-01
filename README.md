@@ -1,5 +1,7 @@
 # Anova Precision Oven API
 
+Want to skip my rants? Go directly to [Using the API.](https://github.com/bogd/anova-oven-api#using-the-api)
+
 ## Introduction
 
 Before we start - a big FU to Anova! After [many years](https://community.anovaculinary.com/t/api-in-2021) of people in the community asking for an open API, or some way, any way, of interacting with their products in an open way, they still will not provide that. In fact, they repeatedly took active action to prevent people from doing this (changing authentication mechanisms, undocumented [API changes](https://anovaculinary.com/pages/software-updates), or [telling people that "they are working on a public API"](https://github.com/bmedicke/anova.py/issues/1) and instead implementing certificate pinning, etc). 
@@ -14,7 +16,8 @@ Rant over, back to the docs.
 
 This project is in no way affiliated with Anova. Anything you find here is just based on whatever public information I was able to gather. And if the past is any guide, things can (and will) change based on Anova's whims. 
 
-Use this at your own risk.
+> [!WARNING]
+> Use this at your own risk.
 
 ## Acknowledgements 
 
