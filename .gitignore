@@ -1,0 +1,4 @@
+creds*
+credentials*
+large_files
+!creds*.sample
