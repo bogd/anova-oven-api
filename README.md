@@ -64,9 +64,11 @@ Before connecting, you will need to set the following:
 2. Headers:
 * add a header called `Sec-WebSocket-Protocol`, with a value of `ANOVA_V2`
 
-Examples:
+Example - setting query parameters in postman:
 
 ![Query Parameters](assets/parameters.png)
+
+Example - setting headers in postman:
 
 ![Headers](assets/headers.png)
 
