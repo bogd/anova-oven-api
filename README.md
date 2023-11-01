@@ -14,9 +14,10 @@ Rant over, back to the docs.
 
 ## Disclaimer
 
-This project is in no way affiliated with Anova. Anything you find here is just based on whatever public information I was able to gather. And if the past is any guide, things can (and will) change based on Anova's whims. 
-
 > [!WARNING]
+> 
+> This project is in no way affiliated with Anova. Anything you find here is just based on whatever public information I was able to gather. And if the past is any guide, things can (and will) change based on Anova's whims. 
+> 
 > Use this at your own risk.
 
 ## Acknowledgements 
