@@ -20,7 +20,7 @@ Use this at your own risk.
 
 Some useful links I used when putting this together:
 * [API decoding](https://mcolyer.github.io/anova-oven-api/#introduction) by mcolyer. Unfortunately, this is for the v1 API, which was deprecated by Anova in August 2022
-* [Anova oven forwarder](https://github.com/huangyq23/anova-oven-forwarder) by huangyq23 . The project that got me started in the right direction for the v2 API. Also, a great project for anyone looking to collect data from the oven, and even get a nice Grafana dashboard with the various oven parameters
+* [Anova oven forwarder](https://github.com/huangyq23/anova-oven-forwarder) by huangyq23 . The project that got me started in the right direction for the v2 API. Also, a great project for anyone looking to collect data from the oven, and even get a nice Grafana dashboard with the various oven parameters. Unfortunately, I was unable to get in touch with the creator - he/she does not respond to issues, and the discord invite in the repo does not work :(
 * [The discussion](https://community.home-assistant.io/t/anova-precision-oven/541722) that got this project started. Hopefully, in the future, the information I post here will help someone write an actual Home Assistant integration for the oven
 * [The request](https://community.anovaculinary.com/t/api-in-2021) for a public API. Maybe one day this will be available, and my repo will become obsolete. Just don't hold your breath...
 
@@ -35,8 +35,8 @@ There are many places where the requests use UUIDs. As far as I was able to tell
 The actual application runs on Firebase, and authenticates via Google's Identity Platform (OAuth, I believe?). So you will need either an access token (which has a limited lifetime before it expires), or the refresh token (which you can exchange for a new access token whenever needed).
 
 1. Using Chrome, connect to [https://oven.anovaculinary.com](https://oven.anovaculinary.com) . Authenticate using whatever mechanism you normally use. 
-2. Press F12, and go to Application > Storage > IndexedDB > firebaseLocalStorageDB > firebaseLocalStorage > value > stsTokenManager > refreshToken
-3. If you are able to copy/paste that token, great! In my case, Chrome did not allow that, so I had to install a third-party extension (IndexedDBEdit). This adds a new tab under F12, so you can easily go to F12 > IndexedDBEdit > firebaseLocalStorageDB > firebaseLocalStorage and get the `refreshToken` value from the JSON.
+2. Press F12, and go to `Application > Storage > IndexedDB > firebaseLocalStorageDB > firebaseLocalStorage > value > stsTokenManager > refreshToken`
+3. If you are able to copy/paste that token, great! In my case, Chrome did not allow that, so I had to install a third-party extension (IndexedDBEdit). This adds a new tab under F12, so you can easily go to `F12 > IndexedDBEdit > firebaseLocalStorageDB > firebaseLocalStorage` and get the `refreshToken` value from the JSON.
 4. While you are here, also get the apiKey (it should be the same one for everyone)
 
 ### Getting the access token
@@ -50,7 +50,7 @@ curl 'https://securetoken.googleapis.com/v1/token?key=<API_KEY>' \
 
 Replace `API_KEY` and `REFRESH_TOKEN` with the values you got in the previous step.
 
-Copy the value for `id_token` - this is the one you will need later.
+You will get a JSON as a result. Copy the value for `id_token` - this is the one you will need later.
 
 ### Connecting to the API
 
@@ -64,9 +64,18 @@ Before connecting, you will need to set the following:
 2. Headers:
 * add a header called `Sec-WebSocket-Protocol`, with a value of `ANOVA_V2`
 
+Examples:
+
+![Query Parameters](assets/parameters.png)
+
+![Headers](assets/headers.png)
+
+
 ### Getting information
 
-Once connected, you should start to receive `CMD_APO_STATE` messages. They are received periodically, about every 30 seconds.
+Once connected, you should start to receive `EVENT_APO_STATE` messages. They are received periodically, about every 30 seconds.
+
+![State messages](assets/connection.png)
 
 Look for `cookerId` in the received messages - that is your device (oven) ID, and you will need that when sending commands to it!
 
