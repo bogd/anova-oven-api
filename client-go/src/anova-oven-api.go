@@ -24,9 +24,12 @@ const (
 )
 
 func decodeStateMessage(jsonResult map[string]interface{}) {
-	fmt.Println("================ Oven mode is ===============")
-	fmt.Println(jsonResult["payload"].(map[string]interface{})["state"].(map[string]interface{})["state"].(map[string]interface{})["mode"].(string))
-	fmt.Println("=============================================")
+	ovenId := jsonResult["payload"].(map[string]interface{})["cookerId"].(string)
+	fullState := jsonResult["payload"].(map[string]interface{})["state"].(map[string]interface{})
+	currentMode := fullState["state"].(map[string]interface{})["mode"].(string)
+	currentTemperature := fullState["nodes"].(map[string]interface{})["temperatureBulbs"].(map[string]interface{})["dry"].(map[string]interface{})["current"].(map[string]interface{})["celsius"].(float64)
+	timeLeftOnTimer := int(fullState["nodes"].(map[string]interface{})["timer"].(map[string]interface{})["current"].(float64))
+	fmt.Printf("Oven with ID |%s|: mode %s, current temperature (dry) %.2f, timer %02d:%02d\n", ovenId, currentMode, currentTemperature, timeLeftOnTimer/60, timeLeftOnTimer%60)
 }
 
 func receiveMessages(c *websocket.Conn, showFullJSON bool) {
@@ -157,7 +160,6 @@ func main() {
 	u.RawQuery = values.Encode()
 
 	fmt.Println("Connecting to websocket")
-
 	c, _, err := websocket.DefaultDialer.Dial(u.String(),
 		http.Header{
 			"Sec-WebSocket-Protocol": {"ANOVA_V2"},

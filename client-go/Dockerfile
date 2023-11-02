@@ -4,7 +4,7 @@ RUN mkdir -p /oven-client/src
 
 WORKDIR /oven-client
 
-COPY src/go.mod src/go.sum /oven-client/src
+COPY src/go.mod src/go.sum /oven-client/src/
 
 WORKDIR /oven-client/src
 
@@ -13,7 +13,7 @@ RUN \
 
 COPY src .
 
-RUN go build -o ../bin/oven-client -v ./src
+RUN go build -o ../bin/oven-client -v .
 
 # Final image
 # FROM scratch	
@@ -23,5 +23,5 @@ LABEL maintainer="bogd"
 
 COPY --from=builder /oven-client/bin/oven-client /oven-client
   
-CMD ["/oven-client"]
+ENTRYPOINT ["/oven-client"]
 
