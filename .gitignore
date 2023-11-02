@@ -1,4 +1,5 @@
 creds*
 credentials*
 large_files
+client/binaries
 !creds*.sample
