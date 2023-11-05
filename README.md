@@ -1,6 +1,6 @@
 # Anova Precision Oven API
 
-Want to skip my rants? Go directly to [the API documentation]](./docs/README.md)
+Want to skip my rants? Go directly to [the API documentation](./docs/README.md)
 
 ## Introduction
 
