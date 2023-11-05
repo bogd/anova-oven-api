@@ -1,0 +1,11 @@
+{
+    "command": "CMD_APC_SET_TARGET_TEMP",
+    "requestId": "630104f3b613ed22a6a812",
+    "payload": {
+      "cookerId": "ABCDEFG36664XSTAAE",
+      "type": "pro",
+      "targetTemperature": 60,
+      "unit": "C",
+      "requestId": "9133b567668be43b9b8a3c"
+    }
+  }
