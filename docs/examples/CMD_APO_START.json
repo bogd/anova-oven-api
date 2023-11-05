@@ -1,0 +1,250 @@
+{
+    "command": "CMD_APO_START",
+    "payload": {
+      "payload": {
+        "cookId": "android-8abff358-d7c8-4694-bd90-54344563afe5",
+        "stages": [
+          {
+            "stepType": "stage",
+            "id": "android-1b7dbdd2-dd07-4f9c-95d1-76c5aea20c60",
+            "title": "First stage",
+            "description": "",
+            "type": "preheat",
+            "userActionRequired": false,
+            "temperatureBulbs": {
+              "dry": {
+                "setpoint": {
+                  "fahrenheit": 410,
+                  "celsius": 210
+                }
+              },
+              "mode": "dry"
+            },
+            "heatingElements": {
+              "bottom": {
+                "on": false
+              },
+              "top": {
+                "on": false
+              },
+              "rear": {
+                "on": true
+              }
+            },
+            "fan": {
+              "speed": 100
+            },
+            "vent": {
+              "open": false
+            },
+            "rackPosition": 3
+          },
+          {
+            "stepType": "stage",
+            "id": "android-a9523efb-3590-4f74-979a-ca28f79e0b9a",
+            "title": "",
+            "description": "",
+            "type": "cook",
+            "userActionRequired": false,
+            "temperatureBulbs": {
+              "dry": {
+                "setpoint": {
+                  "fahrenheit": 410,
+                  "celsius": 210
+                }
+              },
+              "mode": "dry"
+            },
+            "heatingElements": {
+              "bottom": {
+                "on": false
+              },
+              "top": {
+                "on": false
+              },
+              "rear": {
+                "on": true
+              }
+            },
+            "fan": {
+              "speed": 100
+            },
+            "vent": {
+              "open": false
+            },
+            "rackPosition": 3,
+            "timerAdded": true,
+            "probeAdded": false,
+            "timer": {
+              "initial": 1800
+            }
+          },
+          {
+            "stepType": "stage",
+            "id": "android-1e8b7543-0661-4956-9c78-cad63481bec9",
+            "title": "Stage 2, low temp",
+            "description": "",
+            "type": "preheat",
+            "userActionRequired": true,
+            "temperatureBulbs": {
+              "dry": {
+                "setpoint": {
+                  "fahrenheit": 338,
+                  "celsius": 170
+                }
+              },
+              "mode": "dry"
+            },
+            "heatingElements": {
+              "bottom": {
+                "on": false
+              },
+              "top": {
+                "on": false
+              },
+              "rear": {
+                "on": true
+              }
+            },
+            "fan": {
+              "speed": 100
+            },
+            "vent": {
+              "open": false
+            },
+            "rackPosition": 3,
+            "steamGenerators": {
+              "steamPercentage": {
+                "setpoint": 100
+              },
+              "mode": "steam-percentage"
+            }
+          },
+          {
+            "stepType": "stage",
+            "id": "android-a002ed0f-f049-4a61-b466-1ecda24c26a7",
+            "title": "",
+            "description": "",
+            "type": "cook",
+            "userActionRequired": false,
+            "temperatureBulbs": {
+              "dry": {
+                "setpoint": {
+                  "fahrenheit": 338,
+                  "celsius": 170
+                }
+              },
+              "mode": "dry"
+            },
+            "heatingElements": {
+              "bottom": {
+                "on": false
+              },
+              "top": {
+                "on": false
+              },
+              "rear": {
+                "on": true
+              }
+            },
+            "fan": {
+              "speed": 100
+            },
+            "vent": {
+              "open": false
+            },
+            "rackPosition": 1,
+            "timerAdded": true,
+            "probeAdded": false,
+            "steamGenerators": {
+              "steamPercentage": {
+                "setpoint": 100
+              },
+              "mode": "steam-percentage"
+            },
+            "timer": {
+              "initial": 1800
+            }
+          },
+          {
+            "stepType": "stage",
+            "id": "android-142dff25-ec02-4c8b-86fd-5a10191735ec",
+            "title": "stage 3, higher temperature",
+            "description": "",
+            "type": "preheat",
+            "userActionRequired": false,
+            "temperatureBulbs": {
+              "dry": {
+                "setpoint": {
+                  "fahrenheit": 410,
+                  "celsius": 210
+                }
+              },
+              "mode": "dry"
+            },
+            "heatingElements": {
+              "bottom": {
+                "on": false
+              },
+              "top": {
+                "on": false
+              },
+              "rear": {
+                "on": true
+              }
+            },
+            "fan": {
+              "speed": 100
+            },
+            "vent": {
+              "open": false
+            },
+            "rackPosition": 3
+          },
+          {
+            "stepType": "stage",
+            "id": "android-b849c0b3-d469-4317-adc6-b9a70906e0a6",
+            "title": "",
+            "description": "",
+            "type": "cook",
+            "userActionRequired": false,
+            "temperatureBulbs": {
+              "dry": {
+                "setpoint": {
+                  "fahrenheit": 410,
+                  "celsius": 210
+                }
+              },
+              "mode": "dry"
+            },
+            "heatingElements": {
+              "bottom": {
+                "on": false
+              },
+              "top": {
+                "on": false
+              },
+              "rear": {
+                "on": true
+              }
+            },
+            "fan": {
+              "speed": 100
+            },
+            "vent": {
+              "open": false
+            },
+            "rackPosition": 3,
+            "timerAdded": true,
+            "probeAdded": false,
+            "timer": {
+              "initial": 600
+            }
+          }
+        ]
+      },
+      "type": "CMD_APO_START",
+      "id": "0123456789abcdef"
+    },
+    "requestId": "afa291d8-3519-4b8a-850b-776bf8286816"
+  }  

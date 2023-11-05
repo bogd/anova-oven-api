@@ -1,0 +1,8 @@
+{
+  "command": "CMD_APO_STOP", 
+  "payload": {
+    "type": "CMD_APO_STOP",
+	"id": "0123456789abcdef"
+  },
+  "requestId": "1eddc2c8-d1f1-446b-b76d-334221134"
+}

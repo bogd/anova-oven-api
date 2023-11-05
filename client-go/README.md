@@ -29,7 +29,7 @@ cp creds_anova.yml.sample creds_anova.yml
 Edit the file, placing your `refreshToken` and `apiKey` in the correct places.
 
 ### Option 1 - Using a pre-built Docker image
-The pre-built image (for x86_64, the only architecture I am using) is published on dockerhub as `bogd/anova-oven-api` 
+The pre-built image (for `x86_64`, the only architecture I am using) is published on dockerhub as `bogd/anova-oven-api` 
 
 Make sure you have the `creds_anova.yml` file in the current directory, and run:
 
