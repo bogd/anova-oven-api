@@ -1,0 +1,11 @@
+{
+    "command": "CMD_APO_START_STAGE",
+    "payload": {
+      "payload": {
+        "stageId": "android-4e15564f-4e35-4b68-b2ef-a88078676dff"               
+      },
+      "type": "CMD_APO_START_STAGE",
+      "id": "0123456789abcdef"
+    },
+    "requestId": "dff0ff64-a189-43a3-b439-0ad96fbe944f"
+  } 

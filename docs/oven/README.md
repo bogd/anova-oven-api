@@ -1,1 +1,1 @@
-# API Commands for APO (Anova Precision Oven)
+# API Commands for the APO (Anova Precision Oven)

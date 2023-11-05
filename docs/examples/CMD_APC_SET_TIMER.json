@@ -1,0 +1,10 @@
+{
+    "command": "CMD_APC_SET_TIMER",
+    "requestId": "d587d6ef75673e26d5a893",
+    "payload": {
+      "cookerId": "ABCDEFG36664XSTAAE",
+      "type": "pro",
+      "timer": 1200,
+      "requestId": "73bdf585197415a1f0ff6e"
+    }
+  }

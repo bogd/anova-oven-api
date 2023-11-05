@@ -1,0 +1,12 @@
+{
+    "command": "CMD_APC_START",
+    "requestId": "872a189ef830eef85fc5bb",
+    "payload": {
+      "cookerId": "ABCDEFG36664XSTAAE",
+      "type": "pro",
+      "targetTemperature": 60,         
+      "unit": "C",                            
+      "timer": 1800,
+      "requestId": "142cce05b4f76e6e2125a8"
+    }
+  }

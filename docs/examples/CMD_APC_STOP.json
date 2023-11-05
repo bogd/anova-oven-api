@@ -1,0 +1,9 @@
+{
+    "command": "CMD_APC_STOP",
+    "requestId": "a6084a6a3ec9dea035fe74",
+    "payload": {
+      "cookerId": "ABCDEFG36664XSTAAE",
+      "type": "pro",
+      "requestId": "630104f3b613ed22a6a812"
+    }
+  }

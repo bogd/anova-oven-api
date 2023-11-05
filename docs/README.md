@@ -72,9 +72,11 @@ Look for `cookerId` in the received messages - that is your device (oven/sous-vi
 
 ### Sending commands
 
-*Note*: There are many places where the requests use UUIDs. As far as I was able to tell, you could place pretty much anything there, and it will work. The recommended way is to use version 4 UUIDs - you can generate them for example [here](https://www.uuidgenerator.net/).
+*Note*: There are many places where the APO (oven) requests use UUIDs. As far as I was able to tell, you could place pretty much anything there, and it will work. The recommended way is to use version 4 UUIDs - you can generate them for example [here](https://www.uuidgenerator.net/).
+The APC (cooker) requests use a different format (22 random hexadecimal digits) for the same purpose. One possible generator is [here](https://www.browserling.com/tools/random-hex).
 
 To tell a device what to do, you need to send a JSON-formatted message over the websocket connection. Make sure to place your own device ID (collected from the `STATE` messages - see above) under `id` (for oven) or `cookerId` (for sous-vide cooker)!
+For the sous-vide cooker, you can also find your cooker ID in the app, under Profile -> Settings (the gear icon on the top right) -> Connection/Cooker Details -> Device ID .
 
 As mentioned above, whenever the command needs a UUID, you can write your own, or you can [generate](https://www.uuidgenerator.net/) one.
 
@@ -102,4 +104,6 @@ For every command with a `requestId`, you should receive a `RESPONSE` message of
 } 
 ```
 
-Also, the `EVENT_*_STATE` messages will continue to arrive periodically, as described above.
+Also, the `EVENT_*_STATE` messages will continue to arrive periodically, as described above. The frequency is:
+* every 30 seconds if the device is idle
+* every 2 seconds if a cooking process is active

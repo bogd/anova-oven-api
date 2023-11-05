@@ -1,4 +1,4 @@
-# CMD_APO_STOP
+# CMD_APO_START
 
 Start a cooking process with multiple stages.
 
