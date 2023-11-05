@@ -1,5 +1,6 @@
 # Cook stage syntax
 
+```
 {
     "stepType": "stage",
     "id": "android-<uuid>",         # Or ios-<uuid>
@@ -35,3 +36,4 @@
     },
     "rackPosition": 3               # Tray position
 }
+```

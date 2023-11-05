@@ -78,8 +78,6 @@ The APC (cooker) requests use a different format (22 random hexadecimal digits) 
 To tell a device what to do, you need to send a JSON-formatted message over the websocket connection. Make sure to place your own device ID (collected from the `STATE` messages - see above) under `id` (for oven) or `cookerId` (for sous-vide cooker)!
 For the sous-vide cooker, you can also find your cooker ID in the app, under Profile -> Settings (the gear icon on the top right) -> Connection/Cooker Details -> Device ID .
 
-As mentioned above, whenever the command needs a UUID, you can write your own, or you can [generate](https://www.uuidgenerator.net/) one.
-
 Oven commands:
 * Start cook: [CMD_APO_START](./oven/CMD_APO_START.md)
 * Stop cook: [CMD_APO_STOP](./oven/CMD_APO_STOP.md)
