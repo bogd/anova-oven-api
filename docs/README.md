@@ -49,11 +49,11 @@ Before connecting, you will need to set the following:
 
 Example - setting query parameters in postman:
 
-![Query Parameters](assets/parameters.png)
+![Query Parameters](../assets/parameters.png)
 
 Example - setting headers in postman:
 
-![Headers](assets/headers.png)
+![Headers](../assets/headers.png)
 
 ### Getting information
 
@@ -61,7 +61,7 @@ Once connected, you should start to receive `EVENT_APO_STATE` and/or `EVENT_APC_
 
 You will probably also receive an `EVENT_APO_WIFI_LIST`/`EVENT_APC_WIFI_LIST` message.
 
-![State messages](assets/connection.png)
+![State messages](../assets/connection.png)
 
 The documentation for the messages is here:
 * [EVENT_APO_STATE](./oven/EVENT_APO_STATE.md)
