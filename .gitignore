@@ -1,5 +1,5 @@
 creds*
 credentials*
 large_files
-client/binaries
+client-go/binaries
 !creds*.sample
