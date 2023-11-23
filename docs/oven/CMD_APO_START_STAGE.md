@@ -8,12 +8,12 @@ Syntax:
   "command": "CMD_APO_START_STAGE",
   "payload": {
     "payload": {
-      "stageId": "android-<uuid>"                  # Needs to match an existing `stageId`
+      "stageId": "android-<uuid>"               # Needs to match an existing `stageId`
     },
     "type": "CMD_APO_START_STAGE",
-    "id": "0123456789abcdef"
+    "id": "0123456789abcdef"					# Your oven ID
   },
-  "requestId": "<uuid>"                             # Your oven ID
+  "requestId": "<uuid>"                             
 } 
 ```
 

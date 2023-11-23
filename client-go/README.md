@@ -10,6 +10,8 @@ A (very basic) implementation of a client for the Anova Precision Oven API.
 > 
 > Use this at your own risk.
 
+Note: this is just some very basic proof-of-concept code. I will eventually split it into a dedicated module for interacting with the API, but for now I am just using it to test the interaction and understand the API better. 
+
 ## Prerequisites
 
 A Linux machine, running Docker. It should also work on Windows, but I have only tested using Linux.

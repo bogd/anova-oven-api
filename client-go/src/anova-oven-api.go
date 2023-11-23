@@ -47,6 +47,7 @@ func connectWebsocket(accessToken string) (c *websocket.Conn, err error) {
 	c, _, err = websocket.DefaultDialer.Dial(u.String(),
 		http.Header{
 			"Sec-WebSocket-Protocol": {"ANOVA_V2"},
+			"User-Agent":             {"okhttp/4.7.2"},
 		})
 
 	if err != nil {

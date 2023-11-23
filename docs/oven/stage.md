@@ -34,6 +34,17 @@
     "vent": {                       # Unknown
         "open": false
     },
-    "rackPosition": 3               # Tray position
+    "rackPosition": 3,              # Tray position
+    "timerAdded": true,
+    "timer": {                      # Only if "timerAdded": true
+        "initial": 600              # Timer in seconds
+    },
+    "probeAdded": false,            # Timer and probe cannot be added at the same time!
+    "temperatureProbe": {           # Only if "probeAdded": true
+        "setpoint": {
+            "fahrenheit": 97,       # Probe target temperature, in both Fahrenheit and Celsius. Unknown which one takes precedence if they differ!
+            "celsius": 36
+        }
+    }
 }
 ```

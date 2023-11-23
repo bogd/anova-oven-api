@@ -2,4 +2,5 @@ creds*
 credentials*
 large_files
 client-go/binaries
+client-python
 !creds*.sample

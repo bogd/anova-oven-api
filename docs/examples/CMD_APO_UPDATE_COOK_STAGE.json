@@ -1,0 +1,49 @@
+{
+  "command": "CMD_APO_UPDATE_COOK_STAGE",
+  "payload": {
+    "payload": {
+      "stepType": "stage",
+      "id": "android-4e15564f-4e35-4b68-b2ef-a88078676dff",
+      "title": "",
+      "description": "",
+      "type": "preheat",
+      "userActionRequired": true,
+      "temperatureBulbs": {
+        "wet": {
+          "setpoint": {
+            "fahrenheit": 130,
+            "celsius": 55
+          }
+        },
+        "mode": "wet"
+      },
+      "heatingElements": {
+        "rear": {
+          "on": true
+        },
+        "top": {
+          "on": false
+        },
+        "bottom": {
+          "on": false
+        }
+      },
+      "fan": {
+        "speed": 100
+      },
+      "vent": {
+        "open": false
+      },
+      "rackPosition": 3,
+      "steamGenerators": {
+        "relativeHumidity": {
+          "setpoint": 100
+        },
+        "mode": "relative-humidity"
+      }
+    },
+    "type": "CMD_APO_UPDATE_COOK_STAGE",
+    "id": "0123456789abcdef"
+  },
+  "requestId": "9ac4cd3d-f4be-484f-a676-bfe45f3cd60a"
+}

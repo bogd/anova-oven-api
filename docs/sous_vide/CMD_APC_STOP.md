@@ -11,7 +11,7 @@ Syntax:
   "payload": {
     "cookerId": "<your_cooker_id>",
     "type": "<cooker_type>",                    # "pro", "nano", etc
-    "requestId": ""<random_22_digit_hex>""
+    "requestId": "<random_22_digit_hex>"
   }
 }
 ```
