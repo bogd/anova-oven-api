@@ -1,3 +1,5 @@
+# EVENT_APO_WIFI_FIRMWARE_UPDATE
+
 Looks like it sends when the oven has an update to apply. Weirdly the release notes aren't public.
 
 ```
