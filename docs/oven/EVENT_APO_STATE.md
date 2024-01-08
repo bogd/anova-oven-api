@@ -1,8 +1,30 @@
 # EVENT_APO_STATE
 
-Received periodically (every 30 seconds when device is idle, every 2 seconds when a cook is in progress). 
+Received periodically (every 30 seconds when device is idle, every 2 seconds when a cook is in progress).
+
+Possible payload values:
+
+- state.nodes.fan.speed - 0 to 100.
+- state.nodes.heatingElements.bottom.watts - 0 to 700.
+- state.nodes.heatingElements.rear.watts - 0 to 1600.
+- state.nodes.heatingElements.top.watts - 0 to 1600.
+- state.nodes.lamp.preference - "on" or "off".
+- state.nodes.steamGenerators.boiler.watts - 0 to 480.
+- state.nodes.steamGenerators.evaporator.watts - 0 to 160.
+- state.nodes.steamGenerators.mode - "idle" and "running".
+- state.nodes.steamGenerators.relativeHumidity.current - 0 to 100.
+- state.nodes.temperatureBulbs.mode - "dry" and "wet".
+- state.nodes.temperatureProbe.X - not sure where the value is reported.
+- state.nodes.timer.current - time in seconds elapsed.
+- state.nodes.timer.initial - time in seconds total.
+- state.nodes.timer.mode - "idle" and "running".
+
+TODO:
+
+- Determine how the temperature probe is reported back
 
 Syntax:
+
 ```
 {
    "command" : "EVENT_APO_STATE",
