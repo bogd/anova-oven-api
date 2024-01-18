@@ -32,5 +32,5 @@ Some useful links I used when putting this together:
 
 The detailed documentation is [here](./docs/README.md)
 
-A Postman Workspace is available [here](https://www.postman.com/bowery/workspace/anova/overview). Follow the directions for forking it to a private workspace so you do not expose your tokens. Thanks and credit go to @nhorvath .
+A Postman Workspace is available [here](https://www.postman.com/bowery/workspace/anova/overview). Follow the directions for forking it to a private workspace so you do not expose your tokens. Thanks and credit go to nhorvath .
 
