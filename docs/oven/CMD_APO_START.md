@@ -1,6 +1,10 @@
 # CMD_APO_START
 
+
 Start a cooking process with multiple stages.
+
+> [!NOTE]
+> It appears that the syntax is different for v2 ovens. I do not have the hardware to check, but you can find a [full command sample here](../examples/CMD_APO_START_v2.json). Credits go to @jasonjei, who [provided](#4) the sample.
 
 Syntax:
 ```

@@ -1,0 +1,73 @@
+{
+  "command": "CMD_APO_START",
+  "payload": {
+    "payload": {
+      "stages": [
+        {
+          "id": "android-599df333-e3a5-4ffd-a8c7-eaead73e7f88",
+          "do": {
+            "type": "cook",
+            "fan": {
+              "speed": 100
+            },
+            "heatingElements": {
+              "top": {
+                "on": false
+              },
+              "bottom": {
+                "on": false
+              },
+              "rear": {
+                "on": true
+              }
+            },
+            "exhaustVent": {
+              "state": "closed"
+            },
+            "steamGenerators": {
+              "mode": "relative-humidity",
+              "relativeHumidity": {
+                "setpoint": 100
+              }
+            },
+            "temperatureBulbs": {
+              "mode": "dry",
+              "dry": {
+                "setpoint": {
+                  "celsius": 23.89
+                }
+              }
+            }
+          },
+          "exit": {
+            "conditions": {
+              "and": {}
+            }
+          },
+          "entry": {
+            "conditions": {
+              "and": {
+                "nodes.temperatureBulbs.dry.current.celsius": {
+                  ">=": 23.89
+                }
+              }
+            }
+          },
+          "title": "",
+          "description": "",
+          "rackPosition": 3
+        }
+      ],
+      "cookId": "android-2541f13c-ba5d-428d-8ba6-c6f47709b24s",
+      "cookerId": "REDACTED",
+      "cookableId": "OScOf0AStOW3yKWIN3Bh",
+      "title": "",
+      "type": "oven_v2",
+      "originSource": "android",
+      "cookableType": "manual"
+    },
+    "type": "CMD_APO_START",
+    "id": "REDACTED"
+  },
+  "requestId": "7701a11c-4333-4347-9d43-c11cf8075669"
+}
