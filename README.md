@@ -36,4 +36,4 @@ A Postman Workspace is available [here](https://www.postman.com/bowery/workspace
 
 ## Home Assistant Integrations
 * Based on the work here, andr83 has created [a working integration](https://github.com/andr83/hacs-anova-oven)
-* Based on the published API from Anova, wroungdoug has created [another integration](https://github.com/wrongdoug/ha-anova-precision-oven). Unfortunately, it is still missing some functionality (programming complex cooking sequences) for now (as of September 2026)
+* Based on the published API from Anova, wrongdoug has created [another integration](https://github.com/wrongdoug/ha-anova-precision-oven). Unfortunately, it is still missing some functionality (programming complex cooking sequences) for now (as of September 2026)
