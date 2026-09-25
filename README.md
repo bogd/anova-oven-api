@@ -1,6 +1,12 @@
 # Anova Precision Oven API
 
-Want to skip my rants? Go directly to [the API documentation](./docs/README.md)
+Want to skip my rants? Go directly to [the API documentation](./docs/README.md). Or, even better, read the next few lines and go directly to [the official documentation](https://developer.anovaculinary.com/docs/intro)!
+
+## New Developments
+
+Well well... it looks like Anova has finally gone ahead and published official documentation of their API(s). So if you are looking for details on the API, the best place to start is [their documentation](https://developer.anovaculinary.com/docs/intro). This repo was created a while ago, after a long time of them refusing to publish/document their API.
+
+It does seem I might have to eat some of my words below. Just some, not all of them :) (I still dislike some of the things they did in the past). But at least this shows I was right about the "good people, working to create good products" part. And I do hope I played at least some small part in pushing them in the right direction.
 
 ## Introduction
 
